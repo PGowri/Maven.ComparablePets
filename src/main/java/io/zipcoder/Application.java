@@ -51,13 +51,13 @@ class Sort implements Comparator<Pet>
 {
     // Used for sorting in ascending order of
     // roll number
-    public String compare(Pet Cat, Pet Dob, Pet Fish)
-    {
+    public String compare(Pet Cat, Pet Dob, Pet Fish) {
         return "";
     }
 
     @Override
     public int compare(Pet Cat, Pet Dog) {
-        return 0;
+
+        return Cat.petName.compareTo(Dog.petName);
     }
 }
